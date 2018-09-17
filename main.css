@@ -1,0 +1,21 @@
+html {
+    color: white;
+    background-color: gray;
+}
+#main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+#image {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+#img-caption {
+    font-style: italic;
+}
+
