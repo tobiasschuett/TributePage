@@ -1,21 +1,53 @@
 html {
     color: white;
-    background-color: gray;
+    background-color: black;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #main {
     text-align: center;
     display: flex;
     flex-direction: column;
-    
 }
 #image {
     max-width: 100%;
     width: 50%;
     height: auto;
     display: block;
-    margin: auto;
+    margin: auto; 
+}
+h1 {
+    font-size: 50px;
+}
+#img-div {
+    padding-bottom: 3em;
 }
 #img-caption {
     font-style: italic;
+}
+.container {
+    font-size: 20px;
+    width: 100%;
+    background: LightGray;
+    color: black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.d1{
+    background: white;
+    height: 20em;
+}
+.d2{background: gray;
+    height: 20em;}
+.d3{background: gray;
+    height: 20em;}
+.d4{background: white;
+    height: 20em;}
+.d5{
+    background white;
+    grid-area: 3/1/4/3;
+    height: 5em;
 }
 
