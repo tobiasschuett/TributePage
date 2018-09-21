@@ -1,15 +1,59 @@
 html {
     color: white;
     background-color: black;
+
 }
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 #main {
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+#img-div {
+    display: inline-block;
+    text-align: center;
+}
+#image {
+    float: left;
+    width: 100%;
+    height: auto;
+    max-width: 911px;
+}
+#right {
+    display: inline-block;
+    float: right;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    text-align: center;
+}
+#right a {
+    color: rgb(119,187,249);
+    text-decoration: none;
+    margin: auto;
+    position: relative;
+}
+@media screen and (min-width: 851px) and (max-width: 50000px) {
+    #right a {
+        top: 40em;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 850px) {
+    #main {
+        flex-direction: column;
+    }
+    #right {
+        width: 100%;
+    }
+    #right a {
+        top: 30em;
+    }
+}
+/*
+h2 {
+    padding-bottom: 1.5em;
 }
 #image {
     max-width: 100%;
@@ -17,12 +61,10 @@ body {
     height: auto;
     display: block;
     margin: auto; 
+    border-radius: 10%;
 }
 h1 {
     font-size: 50px;
-}
-#img-div {
-    padding-bottom: 3em;
 }
 #img-caption {
     font-style: italic;
@@ -31,23 +73,35 @@ h1 {
     font-size: 20px;
     width: 100%;
     background: LightGray;
-    color: black;
+    color: white;
     display: grid;
     grid-template-columns: 50% 50%;
+    line-height: 1.5;
 }
 .d1{
-    background: white;
+    background: black;
+    height: 20em;
+    padding-bottom: 3em;
+}
+.d2{background: black;
+    height: 20em;
+    text-align: left;
+    padding-bottom: 3em;
+}
+.d3{
+    background: black;
     height: 20em;
 }
-.d2{background: gray;
-    height: 20em;}
-.d3{background: gray;
-    height: 20em;}
-.d4{background: white;
-    height: 20em;}
+.d4{background: black;
+    height: 20em;  
+}
 .d5{
-    background white;
+    background: black;
     grid-area: 3/1/4/3;
     height: 5em;
 }
+.d5 a {
+    color: lightblue;
+}
+*/
 
