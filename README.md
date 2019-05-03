@@ -1,2 +1,2 @@
 # TributePage
-my freeCodeCamp tribute page
+My freeCodeCamp Tribute Page
