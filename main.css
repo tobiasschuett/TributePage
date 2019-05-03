@@ -17,8 +17,8 @@ body {
 }
 #image {
     float: left;
-    width: 100%;
     height: auto;
+    width: 750px;
     max-width: 911px;
 }
 #right {
@@ -35,9 +35,14 @@ body {
     margin: auto;
     position: relative;
 }
+#right h3 {
+    font-size: 20pt;
+    position: relative;
+    top: 8em;
+}
 @media screen and (min-width: 851px) and (max-width: 50000px) {
     #right a {
-        top: 40em;
+        bottom: 10px;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 850px) {
@@ -48,60 +53,7 @@ body {
         width: 100%;
     }
     #right a {
-        top: 30em;
+        bottom: 10px;
     }
 }
-/*
-h2 {
-    padding-bottom: 1.5em;
-}
-#image {
-    max-width: 100%;
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: auto; 
-    border-radius: 10%;
-}
-h1 {
-    font-size: 50px;
-}
-#img-caption {
-    font-style: italic;
-}
-.container {
-    font-size: 20px;
-    width: 100%;
-    background: LightGray;
-    color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    line-height: 1.5;
-}
-.d1{
-    background: black;
-    height: 20em;
-    padding-bottom: 3em;
-}
-.d2{background: black;
-    height: 20em;
-    text-align: left;
-    padding-bottom: 3em;
-}
-.d3{
-    background: black;
-    height: 20em;
-}
-.d4{background: black;
-    height: 20em;  
-}
-.d5{
-    background: black;
-    grid-area: 3/1/4/3;
-    height: 5em;
-}
-.d5 a {
-    color: lightblue;
-}
-*/
 
