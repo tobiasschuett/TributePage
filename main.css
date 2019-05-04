@@ -1,11 +1,10 @@
 html {
     color: white;
     background-color: black;
-
 }
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 #main {
     display: flex;
@@ -14,46 +13,51 @@ body {
 #img-div {
     display: inline-block;
     text-align: center;
+    font-size: 12pt;
+    letter-spacing: 0.6mm;
 }
 #image {
-    float: left;
-    height: auto;
-    width: 750px;
-    max-width: 911px;
-}
-#right {
-    display: inline-block;
     float: right;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+#img-caption {
+    position: relative;
+    top: 1em;
+}
+#left {
+    display: inline-block;
+    float: left;
     height: 100%;
     width: 50%;
     background-color: black;
     text-align: center;
+    padding: 3em;
+    line-height: 1.4;
+    font-size: 12pt;
+    letter-spacing: 0.6mm;
 }
-#right a {
+#infosrc {
+    color: white;
+}
+#tribute-link {
     color: rgb(119,187,249);
     text-decoration: none;
     margin: auto;
     position: relative;
 }
-#right h3 {
-    font-size: 20pt;
-    position: relative;
-    top: 8em;
-}
-@media screen and (min-width: 851px) and (max-width: 50000px) {
-    #right a {
-        bottom: 10px;
+@media screen and (min-width: 851px) {
+    #tribute-link {
+        top: 1.5em;
     }
 }
 @media screen and (min-width: 0px) and (max-width: 850px) {
     #main {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-    #right {
+    #left {
         width: 100%;
-    }
-    #right a {
-        bottom: 10px;
     }
 }
 
