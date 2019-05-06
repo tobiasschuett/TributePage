@@ -27,7 +27,6 @@ body {
     top: 1em;
 }
 #left {
-    display: inline-block;
     float: left;
     height: 100%;
     width: 50%;
