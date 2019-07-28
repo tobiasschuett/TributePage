@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+#container {
+    height: 100%;
+    width: 70vw;
+    padding: 20px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form div {
+    padding: 10px;
+}
+input {
+    border-width: 0px 0px 1px 0px;
+    border-color: black;
+    background-color: lightcyan;
+}
