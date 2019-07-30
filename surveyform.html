@@ -13,10 +13,46 @@
             <h1 id="title">Survey Form</h1>
             <p id="description">Help us understand how to improve the education system</p>
             <form id="survey-form">
-                <label id="name-label">* Name: <input id="name" type="text" placeholder="Enter your full name" required></label>
-                <label id="email-label">* Email: <input id="email" type="text" placeholder="Enter your email adress" required></label></div>
-                <label id="number-label"></label>* Age: <input id="number" type="number" required></label>
-                <button type="submit">Submit</button>
+                <label id="name-label" for="name">Name  
+                <input id="name" type="text" placeholder="Your full name" required></label>
+
+                <label id="email-label" for="email">Email  
+                <input id="email" type="email" placeholder="Your email" required></label>
+
+                <label id="number-label" for="number">Age      
+                <input id="number" type="number" placeholder="your Age" min="1" max="100" required></label>
+                
+
+                <div class="radio">
+                    <p>I am a</p>
+                    <label for="student"> 
+                    <input id="student" type="radio" name="student-parent-teacher" value="attribute">Student
+                    </label>
+                    <label for="parent"> 
+                    <input id="parent" type="radio" name="student-parent-teacher" value="attribute">Parent
+                    </label>
+                    <label for="teacher"> 
+                    <input id="teacher" type="radio" name="student-parent-teacher" value="attribute">Teacher
+                    </label>
+                </div>
+                
+                <div class="checkbox">
+                    <p>Fields that need improvement</p>
+                    <label for="tech">
+                        <input id="tech" type="checkbox" name="tech-person-incentive" value="attribute">use of technology    
+                    </label>
+                    <label for="person">
+                        <input id="person" type="checkbox" name="tech-person-incentive" value="attribute">student specific feedback  
+                    </label>
+                    <label for="incent">
+                        <input id="incent" type="checkbox" name="tech-person-incentive" value="attribute">incentives for learning 
+                    </label>
+                </div>
+
+                <label for="Nachricht">Message</label>
+                <textarea id="Nachricht" name="Nachricht" style="height:200px" placeholder="space for further ideas"></textarea>
+
+                <button id="submit" type="submit">Submit</button>
             </form>
             </div>
         </main>
