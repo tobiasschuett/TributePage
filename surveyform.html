@@ -35,9 +35,19 @@
                     <input id="teacher" type="radio" name="student-parent-teacher" value="attribute">Teacher
                     </label>
                 </div>
+
+                <div id="dropdown">
+                <p>My school's location:</p>
+                <select name="location">
+                        <option value="city">city</option>
+                        <option value="suburb">suburb</option>
+                        <option value="town">town</option>
+                        <option value="rural">rural</option>
+                      </select>
+                </div>
                 
                 <div class="checkbox">
-                    <p>Fields that need improvement</p>
+                    <p>Fields that need improvement:</p>
                     <label for="tech">
                         <input id="tech" type="checkbox" name="tech-person-incentive" value="attribute">use of technology    
                     </label>
@@ -50,7 +60,7 @@
                 </div>
 
                 <label for="Nachricht">Message</label>
-                <textarea id="Nachricht" name="Nachricht" style="height:200px" placeholder="space for further ideas"></textarea>
+                <textarea id="Nachricht" name="Nachricht" style="height:200px" placeholder="Room for further ideas"></textarea>
 
                 <button id="submit" type="submit">Submit</button>
             </form>

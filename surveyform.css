@@ -4,11 +4,14 @@ body {
     
 }
 #container {
-    height: 100%;
-    width: 70vw;
     padding: 20px;
     background-color: lightcyan;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
