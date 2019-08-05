@@ -13,56 +13,53 @@
             <h1 id="title">Survey Form</h1>
             <p id="description">Help us understand how to improve the education system</p>
             <form id="survey-form">
-                <label id="name-label" for="name">Name  
-                <input id="name" type="text" placeholder="Your full name" required></label>
+                <label id="name-label" for="name">Name:  
+                <input id="name" type="text" placeholder="Your full name" required></label> <br>
 
-                <label id="email-label" for="email">Email  
-                <input id="email" type="email" placeholder="Your email" required></label>
+                <label id="email-label" for="email">Email:  
+                <input id="email" type="email" placeholder="Your email" required></label> <br>
 
-                <label id="number-label" for="number">Age      
-                <input id="number" type="number" placeholder="your Age" min="1" max="100" required></label>
-                
+                <label id="number-label" for="number">Age:      
+                <input id="number" type="number" placeholder="your Age" min="1" max="100" required></label> <br><br>
 
                 <div class="radio">
-                    <p>I am a</p>
+                    I am a:
                     <label for="student"> 
-                    <input id="student" type="radio" name="student-parent-teacher" value="attribute">Student
-                    </label>
+                    <span id="answer">Student</span><input id="student" type="radio" name="student-parent-teacher" value="attribute">
+                    </label> <br>
                     <label for="parent"> 
-                    <input id="parent" type="radio" name="student-parent-teacher" value="attribute">Parent
-                    </label>
+                    <span id="answer">Parent</span><input id="parent" type="radio" name="student-parent-teacher" value="attribute">
+                    </label> <br>
                     <label for="teacher"> 
-                    <input id="teacher" type="radio" name="student-parent-teacher" value="attribute">Teacher
-                    </label>
+                    <span id="answer">Teacher</span><input id="teacher" type="radio" name="student-parent-teacher" value="attribute">
+                    </label> <br>
                 </div>
 
                 <div id="dropdown">
-                <p>My school's location:</p>
-                <select name="location">
+                My school's location:
+                <select id="location" name="location">
                         <option value="city">city</option>
                         <option value="suburb">suburb</option>
                         <option value="town">town</option>
                         <option value="rural">rural</option>
-                      </select>
+                </select> <br>
                 </div>
                 
                 <div class="checkbox">
-                    <p>Fields that need improvement:</p>
+                    Fields that need improvement:
                     <label for="tech">
-                        <input id="tech" type="checkbox" name="tech-person-incentive" value="attribute">use of technology    
-                    </label>
+                            <span id="answer">use of technology</span><input id="tech" type="checkbox" name="tech-person-incentive" value="attribute">   
+                    </label><br>
                     <label for="person">
-                        <input id="person" type="checkbox" name="tech-person-incentive" value="attribute">student specific feedback  
-                    </label>
+                            <span id="answer">student specific feedback</span><input id="person" type="checkbox" name="tech-person-incentive" value="attribute">  
+                    </label><br>
                     <label for="incent">
-                        <input id="incent" type="checkbox" name="tech-person-incentive" value="attribute">incentives for learning 
-                    </label>
+                            <span id="answer">incentives for learning</span><input id="incent" type="checkbox" name="tech-person-incentive" value="attribute"> 
+                    </label><br>
                 </div>
-
-                <label for="Nachricht">Message</label>
-                <textarea id="Nachricht" name="Nachricht" style="height:200px" placeholder="Room for further ideas"></textarea>
-
-                <button id="submit" type="submit">Submit</button>
+                <label for="Nachricht">Message:</label> <br>
+                <textarea id="Nachricht" name="Nachricht" style="height:200px" placeholder="Room for further ideas"></textarea> <br>
+                <button id="submit" type="submit">Submit</button><br>
             </form>
             </div>
         </main>
