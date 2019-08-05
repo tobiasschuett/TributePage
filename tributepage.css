@@ -19,7 +19,6 @@ body {
 #image {
     float: right;
     height: auto;
-    width: 100%;
     max-width: 100%;
 }
 #img-caption {
@@ -27,12 +26,9 @@ body {
     top: 1em;
 }
 #left {
-    float: left;
-    height: 100%;
-    width: 50%;
     background-color: black;
     text-align: center;
-    padding: 3em;
+    padding: 10vw;
     line-height: 1.4;
     font-size: 12pt;
     letter-spacing: 0.6mm;
@@ -50,13 +46,19 @@ body {
     #tribute-link {
         top: 1.5em;
     }
+    #left {
+        float: left;
+        height: 100%;
+        width: 50vw; 
+    }
 }
 @media screen and (min-width: 0px) and (max-width: 850px) {
     #main {
         flex-direction: column-reverse;
+        width: 100%;
     }
     #left {
-        width: 100%;
+        width: 80vw;  
     }
 }
 

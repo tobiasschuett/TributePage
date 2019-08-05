@@ -17,19 +17,18 @@ nav a {
     display: inline-block;
     text-decoration: none;
     font-size: 15px;
-    padding: 25px 25px 25px 25px;
+    padding: 4vh 4vh 4vh 4vh;
 }
 nav #navitem:hover {
     color: gray;
 }
 main {
    display: flex;
-   flex-direction: row;
    padding: 10vh 0vh 0vh 0vh;
 }
 .box {
-    height: 80vh;
-    padding: 2vw;
+    height: 40vh;
+    padding: 2%;
 }
 #box1 {
     background-color: white;
@@ -49,11 +48,17 @@ footer {
 
 @media screen and (min-width: 0px) and (max-width: 750px) {
     .box {
-        width: 96vw;
+        width: 96%;
+    }
+    main {
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 751px) and (max-width: 10000px) {
     .box {
-        width: 46vw;
+        width: 46%;
+    }
+    main {
+        flex-direction: row;
     }
 }
