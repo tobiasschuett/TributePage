@@ -9,24 +9,52 @@
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header id="header">
-        <img id="header-img" src="coffeehouselogo.png">
+        <img id="header-img" src="coffeeplanetlogo.png">
         <nav id="nav-bar">
-            <a class="nav-link" href="productlandingpage.html">Home</a>
-            <a class="nav-link" href="">Our Roast</a>
-            <a class="nav-link" href="">Menu & Pricing</a>
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#ourroast">Our Roast</a>
+            <a class="nav-link" href="#story">The Process</a>
         </nav>    
     </header>
     <main>
-        <div id="home">
-          <img id="homeimage" src="coffeehouse2.jpg">
+
+        <span id="home">
+          <img id="homeimage" src="coffeehouse2.jpg"><br>
            <h2>Special Offers</h2>
-           <form id="form">
+           <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
                <label id="email-label" for="email">
-                    <input id="email" type="email" placeholder="  Enter your Email" required>
+                    <input id="email" name="email" type="email" placeholder="  Enter your Email" required>
                </label>
-               <input id="submit" type="button" value="Sign up">
+               <input id="submit" type="submit" value="Sign up">
            </form>
-        </div>
+           
+        </span>
+        
+        <span id="ourroast">
+            <h2>Our different Roasts</h2>
+            <span id="cardcontainer">
+            <div id="arabica">
+                <h3>Arabica</h3>
+                <p>From our small Farms in Egypt - grown in Fair conditions and by happy workers this coffee roast tastes extraordinary.</p>
+                <img id="arabicapic" src="coffeeproduction.jpg">
+            </div>
+            <div id="kona">
+                <h3>Kona</h3>
+                <p>From our small Farms on the Big Island - grown in Fair conditions and by happy workers this coffee roast tastes extraordinary.</p>
+                <img id="konapic" src="coffeeproduction2.jpg">
+            </div>
+            <div id="guatemala">
+                <h3>Guatemala</h3>
+                <p>From our small Farms in Guatemala - grown in Fair conditions and by happy workers this coffee roast tastes extraordinary.</p>
+                <img id="guatemalapic" src="coffeeproduction3.jpg">
+            </div>
+            </span>
+            <div id="story">
+                <h2>The Process of our coffee</h2>
+                    <iframe id="video" src="https://www.youtube.com/embed/6Lz6Hw320bs" width="560" height="315" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+            </div>
+        </span>
 
     </main>
     <footer>
