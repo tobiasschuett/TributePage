@@ -12,10 +12,7 @@ header {
     top: 0;
 }
 #header-img {
-    width: auto;
-    height: 30px;
     position: fixed;
-    top: 15px;
     left: 50px;
     z-index: 2;
 }
@@ -169,6 +166,11 @@ footer {
     nav a {
         visibility: hidden;
     }
+    #header-img {
+        width: auto;
+        height: 20px;
+        top: 20px;
+    }
 }
 @media screen and (min-width: 951px) and (max-width: 10000px) {
     #cardcontainer {
@@ -185,4 +187,8 @@ footer {
     nav a {
         visibility: visible;
     }
-}
+    #header-img {
+        width: auto;
+        height: 30px;
+        top: 15px;
+    }
