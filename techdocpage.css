@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-direction: row;
+}
+#navbar {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 0px) and (max-width: 750px) {
+    #navbar {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 751px) and (max-width: 10000px) {
+    #navbar {
+        visibility: visible;
+    }
+}
