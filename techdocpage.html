@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>product landing page</title>
+    <title>Technical Documentation Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="techdocpage.css" />
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <nav id="navbar">
-        <header>Latex</header>
+        <header id="navheader"><h1><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></h1></header>
         <a id="Introduction-link" class="nav-link" href="#Introduction">Introduction</a>
         <a id="Document_setup-link" class="nav-link" href="#Document_setup">Document setup</a>
         <a id="Basic_commands-link" class="nav-link" href="#Basic_commands">Basic Commands</a>
@@ -19,50 +19,112 @@
     <main id="main-doc">
         <section id="Introduction" class="main-section"> 
             <header>
-                Introduction
+                <h1>Introduction</h1>
             </header>
-            <p></p>
-            <p></p>
-            <code></code>
+            <p>
+                In contrast to direct writing programs like Microsoft Word or Open Office, Latex is a rather indirekt writing program.
+                In Latex the Document is built by programming the layout in a from the document seperate editor.
+            </p>
+            <p>The main advantages of Latex over any direct writing program are:</p>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>open sourced and free</li>
+                <li>cleaner looking documents</li>
+                <li>controll over every position of text</li>
+                <li>faster and better way to write mathematical expressions</li>
+                <li>...</li>
             </ul>
         </section>
         <section id="Document_setup" class="main-section"> 
                 <header>
-                    Document setup
+                    <h1>Document setup</h1> 
                 </header>
-                <p></p>
-                <p></p>
-                <code></code>
+                <p>The basic setup to get startet looks like this:</p>
+                <div class="codecontainer">
+                <code>
+                    \documentclass[12pt]{article} %%header section <br>
+                    \begin{document}  %%beginning body section<br>
+                    \tableofcontents  <br>
+                    \section{html}   <br>
+                        \subsection{div tags}   <br>
+                    \end{document}    %%end body section<br>
+                </code>
+                </div>
+                <p>Similar to HTML it consists of a head, which is not part of the actual document. This is also the section where we 
+                    will import Latex packages (see section <a id="Latex_packages-linkintext" href="#Latex_packages">Latex packages</a>).
+                    After the head comes the body section where you program the document. Notice that single line comments can be created 
+                    by using <code>%%</code>.<br>
+                    <code>\tableofcontents</code> automatically creates a structured table of contents based on
+                    the sections and subsections you created. 
+                </p>
         </section>
         <section id="Basic_commands" class="main-section">
                 <header>
-                    Basic Commands
+                    <h1>Basic Commands</h1>
                 </header>
-                <p></p>
-                <p></p>
-                <code></code> 
+                <p>Basic and often used Latex commands are:</p>
+                <div class="codecontainer">
+                <code>
+                    \begin{Large} %%increases text size, similar to h1,h2,... in html <br>
+                    \end{Large} <br><br>
+
+                    \hrule %%creates vertical line <br>
+                    \pagebreak  %%starts a new pagebreak <br>
+                    \textit{this text will be italic} <br>
+                    \footnote{this is the text for the footnote} %%footnote effecting last word before <br>
+                    \vspace{1cm} %%extra gab between paragraphs <br>
+                    \\ %%new line <br><br>
+
+                    \begin{center} %%horizontal placement, similar to the float property in CSS <br>
+                    \end{center} <br><br>
+
+                    \includegraphics[scale=0.7]{picture.jpg} %%import a picture and vary its' size <br>
+                </code>
+                </div>
+                <p>If you are looking for a specific command, you can find a lot more <a href="https://en.wikibooks.org/wiki/LaTeX">here</a></p>    
         </section>
         <section id="Latex_packages" class="main-section"> 
                 <header>
-                    Latex packages
+                    <h1>Latex packages</h1>
                 </header>   
-                <p></p>
-                <p></p>
-                <code></code>
+                <p>Packages are essential in Latex for enabling things such as spell checking, 
+                    importing pictures and working with them and setting padding on the text.
+                    These are commanly used packages</p>
+                    <div class="codecontainer">
+                    <code>
+                            \usepackage{german} %%spellchecking <br>
+                            \usepackage[onehalfspacing]{setspace} %%setting line height <br>
+                            \usepackage{graphicx} %%working with pictures <br><br>
+                            
+                            \usepackage[utf8]{inputenc} %%defining the encoding <br>
+                            \usepackage[pdftex]{hyperref} %%creating hyperlinks <br>
+                            \usepackage{url} %%helping Latex understand when text is a url <br>
+                            \usepackage[left=35mm,right=35mm,top=30mm,bottom=45mm]{geometry} %%setting the padding <br>
+                    </code>
+                    </div>
+                <p>If you're looking for a specif one, there is a list <a href="https://en.wikibooks.org/wiki/LaTeX">here</a></p>
         </section>
         <section id="Math_in_Latex" class="main-section"> 
                 <header>
-                    Math in Latex
+                    <h1>Math in Latex</h1>
                 </header>
-                <p></p>
-                <p></p>
-                <code></code>
+                <p>Probably the major advantage has Latex when being used for scientific projects. This is becuase of its' 
+                    math mode, which creates clean looking equations and are programmable to its' core.
+                    This is an example of a equation written with Latex</p>
+                <div class="codecontainer">   
+                <code>
+                        $$F_{G}=G*\frac{m_{1}*m_{2}}{r^{2}}$$
+                </code>
+                </div> 
+                <p>Let's break it down</p>
+                <div class="codecontainer">
+                <code>
+                        $$ %%starts the math mode, use single $ for inline equation <br><br>
+                        F_{G} %%makes G as a subscribt of F <br>
+                        \frac %%creates a fraction between the first {} and the second {} <br>
+                        {m_{1}*m_{2}}{r^{2}} <br><br>
+                        $$ %%ends the math mode <br>
+                </code>
+                </div>
         </section>
     </main>
 </body>
