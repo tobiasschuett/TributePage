@@ -9,15 +9,22 @@ body {
     display: flex;
     justify-content: center;
 }
+input, #Nachricht {
+    background-color: whitesmoke;
+    border-radius: 12px;
+    border: none;
+}
+input {
+    height: 17pt;
+}
 #container {
     padding: 20px;
-    background-color: lightcyan;
+    background-color: lightcoral;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    display: inline-block;
-    
+    display: inline-block;   
 }
-#name, #email, #number, #student, #parent, #teacher, #location, #tech, #person, #incent, #Nachricht, #answer, #submit {
+#name, #email, #number, #student, #parent, #teacher, #location, #tech, #person, #incent, #Nachricht, #answer {
   float: right;
 }
 #Nachricht {
@@ -28,15 +35,17 @@ body {
     font-style: italic;
 }
 button[type=submit] {
-    background-color: #4CAF50;
+    background-color: black;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    margin: 10px 40% 10px 40%;
 }
 button[type=submit]:hover {
-    background-color: #45a049; 
+    background-color: white; 
+    color: black;
 }
 
 
