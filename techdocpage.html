@@ -38,7 +38,7 @@
                 <header>
                     <h1>Document setup</h1> 
                 </header>
-                <p>The basic setup to get startet looks like this:</p>
+                <p>The basic setup to get startet looks always like this:</p>
                 <div class="codecontainer">
                 <code>
                     \documentclass[12pt]{article} %%header section <br>
@@ -49,11 +49,11 @@
                     \end{document}    %%end body section<br>
                 </code>
                 </div>
-                <p>Similar to HTML it consists of a head, which is not part of the actual document. This is also the section where we 
-                    will import Latex packages (see section <a id="Latex_packages-linkintext" href="#Latex_packages">Latex packages</a>).
-                    After the head comes the body section where you program the document. Notice that single line comments can be created 
-                    by using <code>%%</code>.<br>
-                    <code>\tableofcontents</code> automatically creates a structured table of contents based on
+                <p>Similary to HTML the code consists of a head, which is not part of the actual document. This is also the section where we 
+                    will import Latex packages later (see section <a id="Latex_packages-linkintext" href="#Latex_packages">Latex packages</a>).
+                    The head section is followed the body section where the actual document is being created. Notice that single line comments can be created 
+                    by using <span class="codecontainer"><code>%%</code></span>.<br>
+                    <span class="codecontainer"><code>\tableofcontents</code></span> automatically creates a structured table of contents based on
                     the sections and subsections you created. 
                 </p>
         </section>
@@ -86,9 +86,9 @@
                 <header>
                     <h1>Latex packages</h1>
                 </header>   
-                <p>Packages are essential in Latex for enabling things such as spell checking, 
+                <p>Packages are essential in Latex for enabling things such as spell-check, 
                     importing pictures and working with them and setting padding on the text.
-                    These are commanly used packages</p>
+                    Here are some commonly used packages</p>
                     <div class="codecontainer">
                     <code>
                             \usepackage{german} %%spellchecking <br>
@@ -101,15 +101,15 @@
                             \usepackage[left=35mm,right=35mm,top=30mm,bottom=45mm]{geometry} %%setting the padding <br>
                     </code>
                     </div>
-                <p>If you're looking for a specif one, there is a list <a href="https://en.wikibooks.org/wiki/LaTeX">here</a></p>
+                <p>If you're looking for a specific one, there is a list <a href="https://en.wikibooks.org/wiki/LaTeX">here</a></p>
         </section>
         <section id="Math_in_Latex" class="main-section"> 
                 <header>
                     <h1>Math in Latex</h1>
                 </header>
-                <p>Probably the major advantage has Latex when being used for scientific projects. This is becuase of its' 
-                    math mode, which creates clean looking equations and are programmable to its' core.
-                    This is an example of a equation written with Latex</p>
+                <p>Latex becomes especially handy when being used for scientifix projects. Its' embedded math mode creates 
+                    clean looking mathematical expressions and can be edited in every detail.
+                    This is an example of an equation written in Latex</p>
                 <div class="codecontainer">   
                 <code>
                         $$F_{G}=G*\frac{m_{1}*m_{2}}{r^{2}}$$
