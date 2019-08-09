@@ -6,7 +6,7 @@ body {
     margin: 0px;
     font-size: 14px;
     line-height: 1.3;
-    background-color: lightslategray; 
+    background-color: black; 
 }
 nav {
     background-color: black;
@@ -30,22 +30,51 @@ nav #navitem:hover {
 }
 main {
    display: flex;
-   padding: 10vh 0vh 0vh 0vh;
+   padding: 60px 0vh 0vh 0vh;
+   flex-direction: column;
+   align-items: center;
 }
 .box {
-    border-radius: 14px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    padding: 4% 4% 4% 4%;
+    /*border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
+    padding: 4vh 10vh 4vh 10vh;
+    width: 100%;
 }
-#box1 {
-    background-color: white;
+#welcome-section {
+    background-color: lightcoral;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#box2 {
+#projects {
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 92vh;
+    padding: 10vh 4vh 4vh 4vh;
+}
+#welcometop, #welcomebottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projects a, #welcome-section a {
+    text-decoration: none;
+    color: black;
+}
+#projects a:hover, #welcome-section a:hover {
+    color: gray;
+}
+#profile-link, #twitterlink {
+    text-decoration: none;
 }
 footer {
-    background-color: lightslategray;
-    color: black;
+    background-color: lightblue;
+    color: grey;
     width: 100%;
     height: 10vh;
     padding: 10px 10px 10px 10px;
@@ -65,24 +94,36 @@ footer {
     flex-direction: row;
     align-items: center;
 }
+.box h3 {
+    text-align: center;
+}
 
 @media screen and (min-width: 0px) and (max-width: 750px) {
     .box {
-        width: 85%;
-        margin: 2.5% 5% 2.5% 5%;
+        margin: 0px 30px 0px 30px;
     }
-    main {
-        flex-direction: column;
-        align-items: center;
+    .box h3 {
+        margin: 0px 50px 0px 50px;
     }
 }
 @media screen and (min-width: 751px) and (max-width: 10000px) {
     .box {
-        width: 40%;
-        margin: 3% 3% 3% 3%;
-    }
-    main {
-        flex-direction: row;
-        justify-content: center;
+        margin: 0px 50px 0px 50px;
     }
 }
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+ i:hover {
+    border: solid gray;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 13px;
+ } 
