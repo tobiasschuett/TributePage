@@ -115,8 +115,6 @@ footer {
         margin: 0px 50px 0px 50px;
     }
 }
-
-
 i {
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -158,6 +156,117 @@ i {
     }
     100% {
         top: 10px;
+    }
+ }
+ #welcometop h1 {
+    animation-name: appear-h1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in; 
+ }
+ @keyframes appear-h1 {
+    0% {
+        opacity: 0;
+    }
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+ #welcometop h3 {
+    animation-name: appear-h3;
+    animation-duration: 3s;
+    animation-timing-function: ease-in; 
+ }
+ @keyframes appear-h3 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+ #twitterlink {
+    animation-name: appear-twitter;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+ }
+ @keyframes appear-twitter {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+ #githublink {
+    animation-name: appear-github;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+ }
+ @keyframes appear-github {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+ #welcomebottom h3 {
+    animation-name: appear-bottom-h3;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+ }
+ @keyframes appear-bottom-h3 {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+ }
+ #welcomebottom a {
+    animation-name: appear-bottom-a;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+ }
+ @keyframes appear-bottom-a {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
  }
  
