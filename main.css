@@ -23,7 +23,7 @@ nav a {
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
-    padding: 23px 15px 23px 15px;
+    padding: 23px 25px 23px 25px;
 }
 nav #navitem:hover {
     color: gray;
@@ -133,4 +133,31 @@ i {
     display: inline-block;
     padding: 13px;
  } 
+ #arrow {
+     position: relative;
+     animation-name: bounce;
+     animation-duration: 3s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-out;
+ }
+ @keyframes bounce {
+    0% {
+        top: 10px;
+    }
+    10% {
+        top: 20px;
+    }
+    20% {
+        top: 10px;
+    }    
+    30% {
+        top: 20px;
+    }
+    40% {
+        top: 10px;
+    }
+    100% {
+        top: 10px;
+    }
+ }
  
