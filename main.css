@@ -106,6 +106,9 @@ footer {
     .box h3 {
         margin: 0px 50px 0px 50px;
     }
+    #welcomebottom {
+        padding: 0px 0px 70px 0px;
+    }
 }
 @media screen and (min-width: 751px) and (max-width: 10000px) {
     .box {
